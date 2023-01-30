@@ -15,17 +15,26 @@
 //     expect(reverse('car')).toBe('rac')
 // })
 
-const calculator = require ('./calculator')
+// const calculator = require ('./calculator')
 
-test('calcs the correct answer', () => {
-    expect(calculator.add(2,2)).toBe(4)
+// test('calcs the correct answer', () => {
+//     expect(calculator.add(2,2)).toBe(4)
+// })
+// test('calcs the correct answer', () => {
+//     expect(calculator.subtract(2,2)).toBe(0)
+// })
+// test('calcs the correct answer', () => {
+//     expect(calculator.multiply(5,5)).toBe(25)
+// })
+// test('calcs the correct answer', () => {
+//     expect(calculator.divide(10, 5)).toBe(2)
+// })
+
+const ceaserCifer = require ('./ceasarCipher')
+
+test('cyphers with ceaser cipher', () => {
+    expect(ceaserCifer('abc', 1)).toBe('bcd')
 })
-test('calcs the correct answer', () => {
-    expect(calculator.subtract(2,2)).toBe(0)
-})
-test('calcs the correct answer', () => {
-    expect(calculator.multiply(5,5)).toBe(25)
-})
-test('calcs the correct answer', () => {
-    expect(calculator.divide(10, 5)).toBe(2)
+test('cyphers with ceaser cipher', () => {
+    expect(ceaserCifer('z', -1)).toBe('y')
 })
