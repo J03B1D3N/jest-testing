@@ -30,11 +30,25 @@
 //     expect(calculator.divide(10, 5)).toBe(2)
 // })
 
-const ceaserCifer = require ('./ceasarCipher')
+// const ceaserCifer = require ('./ceasarCipher')
 
-test('cyphers with ceaser cipher', () => {
-    expect(ceaserCifer('abc', 1)).toBe('bcd')
-})
-test('cyphers with ceaser cipher', () => {
-    expect(ceaserCifer('z', -1)).toBe('y')
+// test('cyphers with ceaser cipher', () => {
+//     expect(ceaserCifer('abc', 1)).toBe('bcd')
+// })
+// test('cyphers with ceaser cipher', () => {
+//     expect(ceaserCifer('z', -1)).toBe('y')
+// })
+
+const analyzeArray = require('./analyzeArray')
+
+test('works', () => {
+    let object = analyzeArray([1,8,3,4,2,6])
+    expect(object).toStrictEqual(
+        {
+            "average": 4,
+            "min": 1,
+            "max": 8,
+            "length": 6
+          }
+    )
 })
